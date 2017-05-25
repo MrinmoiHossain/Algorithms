@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+string add(string a, string b);
+
 int main(void)
 {
     int T;
@@ -10,9 +12,14 @@ int main(void)
         string a, b;
         cin >> a >> b;
 
-        cout << a << endl;
-        cout << b << endl;
+        cout << "Case #" << i << ": " << add(a, b) << endl;
     }
 
     return 0;
+}
+
+string add(string a, string b)
+{
+    if(a.length() < b.length())
+        swap(a, b);
 }
