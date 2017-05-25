@@ -29,4 +29,19 @@ string add(string a, string b)
 
     for(int i = b.length(); i < a.length(); i++)
         b += "0";
+
+    int c = 0;
+    for(int i = 0; i < a.length(); i++){
+        int add = (a[i] - '0') + (b[i] - '0') + c;
+        c = add / 10;
+        s += (add % 10) + '0';
+    }
+    if(c > 0)
+        s += (c % 10) + '0';
+
+    reverse(a.begin(), a.end());
+    reverse(b.begin(), b.end());
+    reverse(s.begin(), s.end());
+
+    return s;
 }
