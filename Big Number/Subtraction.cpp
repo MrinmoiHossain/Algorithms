@@ -51,7 +51,7 @@ string subtraction(string a, string b)
     }
 
     int l = a.length();
-    while(s[l - 1] == '0'){
+    while(s[l - 1] == '0'){                     //check the last digit, if it will "0", we need not print it, so that erase is from output string
         s.erase(s.end() - 1);
         l--;
     }
