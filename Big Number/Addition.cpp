@@ -20,12 +20,12 @@ int main(void)
 
 string add(string a, string b)
 {
-    string s;                       //additional output string
+    string s;                                           //additional output string
     if(a.length() < b.length())
         swap(a, b);
 
-    reverse(a.begin(), a.end());    //grater than string b
-    reverse(b.begin(), b.end());    //less than string a
+    reverse(a.begin(), a.end());                       //grater than string b
+    reverse(b.begin(), b.end());                       //less than string a
 
     for(int i = b.length(); i < a.length(); i++)
         b += "0";
@@ -39,9 +39,9 @@ string add(string a, string b)
     if(c > 0)
         s += (c % 10) + '0';
 
-    reverse(a.begin(), a.end());
-    reverse(b.begin(), b.end());
-    reverse(s.begin(), s.end());
+    reverse(a.begin(), a.end());                    //back to the old string - a
+    reverse(b.begin(), b.end());                    //back to the old string - b
+    reverse(s.begin(), s.end());                    //output string - s
 
     return s;
 }
