@@ -39,13 +39,25 @@ string subtraction(string a, string b)
 
     for(int i = 0; i < a.length(); i++){
         if(a[i] < b[i]){
-
+            int j = i + 1;
+            while(a[j] == '0' && j < a.length()){
+                a[j] = '9';
+                j++;
+            }
+            a[j]--;
+            a[i] += 10;
         }
-        s += ((a[i] - b[i]) % 10) + '0';
+        s += ((a[i] - b[i]) % 10) + '0';         //subtraction the value
+    }
+
+    int l = a.length();
+    while(s[l - 1] == '0'){
+        s.erase(s.end() - 1);
+        l--;
     }
 
     if(Fmin)
-        s += "-";
+        s += "-";                               //if b string is greater than a, then the result will be negative
 
     reverse(s.begin(), s.end());                //reverse the string to get output string
 
