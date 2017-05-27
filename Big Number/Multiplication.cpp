@@ -59,46 +59,42 @@ string multi(string a, string b)
 
     string m;
     int c = 0;
-    for(int i = 0; i < a.length(); i++){
+    for(int i = 0; i < b.length(); i++){                   //small string
         c = 0;
         m = "";
-        for(int j = 0; j < b.length(); j++){
-            int into = (a[i] - '0') * (b[j] - '0') + c;
+        for(int j = 0; j < a.length(); j++){               //big string
+            int into = (a[j] - '0') * (b[i] - '0') + c;
             c = into / 10;
             m += (into % 10) + '0';
         }
         if(c > 0)
             m += (c % 10) + '0';
 
-        reverse(m.begin(), m.end());
-        for(int j = b.length(); j < b.length() + i; j++)
+        reverse(m.begin(), m.end());                       //first multiplication result
+        for(int j = a.length(); j < a.length() + i; j++)
             m += "0";
-        reverse(m.begin(), m.end());
 
         if(i == 0)
             s = m;
 
         if(i != 0){
             c = 0;
-            reverse(s.begin(), s.end());
-            reverse(m.begin(), m.end());
             s = add(s, m);
-            reverse(s.begin(), s.end());
         }
     }
 
     bool flag = 0;
-    for(int i = 0; i < s.length(); i++){
+    for(int i = 0; i < s.length(); i++){                //check the output zero or somethings
         if(s[i] != '0'){
             flag = 1;
             break;
         }
     }
     if(!flag)
-        a = "0";
+        s = "0";
 
     reverse(a.begin(), a.end());
     reverse(b.begin(), b.end());
-    reverse(s.begin(), s.end());
+
     return s;
 }
