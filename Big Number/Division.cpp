@@ -23,9 +23,23 @@ int main(void)
 string division(string a, LL b)
 {
     string s;
-    for(int i = 0; i < s.length(); i++){
+    LL sum = 0, d;
+    bool flag = 0;
 
+    for(int i = 0; i < a.length(); i++){
+        sum = sum * 10 + (a[i] - '0');
+        d = sum / b;
+        if(d == 0 && !flag)
+            continue;
+        else{
+            s += (d + '0');
+            flag = 1;
+            sum = (sum % b);
+        }
     }
+
+    if(!flag)
+        s = "0";
 
     return s;
 }
