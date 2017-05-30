@@ -1,3 +1,4 @@
+//Runtime: O(sqrt(n)), check prime number between 1 to 1000000007
 #include <bits/stdc++.h>
 typedef long long int ll;
 using namespace std;
@@ -12,7 +13,7 @@ int main(void)
     for(int tc = 1; tc <= T; tc++){
         int n;
         cin >> n;
-        cout << "Case #" << tc << ": " << isPrime(n)? "Prime" : "Not prime" << endl;
+        cout << "Case #" << tc << ": " << (isPrime(n)? "Prime" : "Not prime") << endl;
     }
 
     return 0;
