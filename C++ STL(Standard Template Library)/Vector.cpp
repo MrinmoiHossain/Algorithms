@@ -44,5 +44,42 @@ int main(void)
 
     cout << endl;
 
+    vector<char> characters;
+    characters.assign(5, 'a');          //assign() using
+    for(int i = 0; i < characters.size(); i++)
+        cout << characters[i] << endl;
+
+    cout << endl;
+
+    vector<double> d;
+    d.assign(7, 1.777);                 //assign() for assigning double value
+    for(int i = 0; i < d.size(); i++)
+        cout << d[i] << endl;
+
+    cout << endl;
+
+    vector<int> e;
+    for(int i = 3; i < 11; i++)
+        e.push_back(i);
+    while(!e.empty()){                  //if e is empty return 1, otherwise 0
+        cout << e.front() << endl;      //front give front value of vector
+        e.erase(e.begin());             //for delete element in the vector
+    }
+
+    cout << endl;
+
+                                        //swap
+    vector<int> f;
+    for(int i = 1; i < 4; i++)
+        f.push_back(i);
+    vector<int> g;
+    for(int i = 7; i < 10; i++)
+        g.push_back(i);
+    g.swap(f);                          //a vector swap to another vector
+    for(int i = 0; i < f.size(); i++)
+        cout << f[i] << endl;
+
+    cout << endl;
+
     return 0;
 }
