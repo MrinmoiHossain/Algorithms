@@ -81,5 +81,16 @@ int main(void)
 
     cout << endl;
 
+    vector<int> h{1, 3, 5, 7, 9};       //this feature available in c++11
+    for(size_t i = 0; i < h.size(); i++)//using size_t data type -> size_t same as unsigned int data type
+        cout << "#" << i + 1 << ": " << h[i] << endl;
+    cout << "Another way to print" << endl;
+    for(int j : h)
+        cout << j << endl;
+
+    cout << endl;
+
+
+
     return 0;
 }
