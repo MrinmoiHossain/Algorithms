@@ -87,7 +87,9 @@ int main(void)
     cout << "Another way to print" << endl;
     for(int j : h)
         cout << j << endl;
-
+    cout << "Another second way to print" << endl;
+    for(auto m : h)                     //using auto for "for loop"
+        cout << m << endl;
     cout << endl;
 
 
