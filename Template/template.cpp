@@ -11,6 +11,7 @@
 #include <numeric>
 #include <utility>
 #include <sstream>
+#include <fstream>
 #include <iostream>
 #include <iomanip>
 #include <cstdio>
@@ -19,10 +20,8 @@
 #include <cctype>
 #include <string>
 #include <cstring>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
 #include <ctime>
+#include <iterator>
 using namespace std;
 
 //Template: coder - Mrinmoi Hossain Mokit
@@ -94,8 +93,14 @@ template<class T> inline T gcd(T a, T b) {  if(a < 0) return gcd(-a, b);
 template<class T> inline T lcm(T a, T b) {  if(a < 0) return lcm(-a, b);
                                             if(b < 0) return lcm(a, -b);
                                             return a * (b / gcd(a, b)); }
+template<class T> inline bool isPrime(T n){ if(n <= 1) return false;
+                                            for(T i = 2; i * i <= n; i++)
+                                                if(n % i == 0) return false;
+                                            return true; }
 
 /*Function Declaration*/
+double dist(double x1, double y1, double x2, double y2) { return sqrt(sqr(x1 - x2) + sqr(y1 - y2)); }
+double disR(double x1, double y1, double x2, double y2) { return sqr(x1 - x2) + sqr(y1 - y2); }
 //Translator ->//
 bool isUpper(char a) { return (a >= 'A' && a <= 'Z'); }
 bool isLower(char a) { return (a >= 'a' && a <= 'z'); }
