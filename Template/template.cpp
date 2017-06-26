@@ -15,6 +15,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdio>
+#include <limits>
+#include <climits>
 #include <cmath>
 #include <cstdlib>
 #include <cctype>
