@@ -1,3 +1,4 @@
+//Linked List applied in: "C"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,6 +7,53 @@ struct Node{
 	int data;
 	struct Node *next;
 };
+
+struct Node *head, *tail;
+
+/*------Insert Function-------*/
+//Insetr into head	->O(1)
+void headInsert(int data)
+{
+	if(head == NULL){
+		head = (struct Node *)malloc(sizeof(struct Node));
+		head->data = data;
+		head->next = NULL;
+		tail = head;
+	}
+	else{
+		struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+		temp->data = data;
+		temp->next = head;
+		head = temp;
+	}
+}
+//Inset into tail	->O(1)
+void tailInsert(int data)
+{
+	if(head == NULL){
+		head = (struct Node *)malloc(sizeof(struct Node));
+		head->data = data;
+		head->next = NULL;
+		tail = head;
+	}
+	else{
+		struct Node *temp = (struct Node *)malloc(sizeof(struct Node));
+		temp->data = data;
+		temp->next = NULL;
+		tail->next = temp;
+		tail = tail->next;
+	}
+}
+//Inset data after every n
+void InsertAfter(int data, int n)
+{
+
+}
+//Insert data before every n
+void InsetBefore(int data, int n)
+{
+
+}
 
 //Length function -> O(n)
 int len(Node *head)
@@ -20,36 +68,6 @@ int len(Node *head)
 	return con;
 }
 
-//Insertion at the beginnig -> O(1)
-void AddTop(Node **head, int data)
-{
-	Node *new_node = new Node();
-	new_node->data = data;
-	new_node->next = *head;
-	*head = new_node;
-}
-
-//Insert function, O(n)
-void Append(Node *head, int data)
-{
-	if(head == NULL){				//check the list is empty or not?
-		head = new Node();
-		head->data = data;
-		head->next = NULL;
-	}
-	else{
-		Node *current_node = head;
-		while(current_node->next != NULL){
-			current_node = current_node->next;
-		}
-
-		struct Node *new_node = new Node();
-		new_node->data = data;
-		new_node->next = NULL;
-
-		current_node->next = new_node;
-	}
-}
 
 //Delete function
 void Delete(Node *head, int data)
@@ -74,7 +92,7 @@ void Delete(Node *head, int data)
 }
 
 //Print the Node value
-void Print(Node *head)
+void Print()
 {
 	while(head != NULL){
 		cout << head->data << endl;
@@ -84,27 +102,15 @@ void Print(Node *head)
 
 int main(void)
 {
-	Node *head = new Node();
-	head->data = 1;
-	head->next = NULL;
+	cout << "Inset into Tail" << endl;
+	for(int i = 1; i <= 5; i++)
+		tailInsert(i);
+	Print();
 
-	cout << "First Linked List" << endl;
-	Print(head);
-
-	Append(head, 2);
-	Append(head, 5);
-	cout << "After Added Linked List" << endl;
-	Print(head);
-
-	cout << "The length of the list is: " << len(head) << endl;
-
-	cout << "Inserting into the Top" << endl;
-	AddTop(&head, 7);
-	Print(head);
-
-	cout << "After delete from the List" << endl;
-	Delete(head, 2);
-	Print(head);
+	cout << "Insert into Head" << endl;
+	for(int i = 0; i < 5; i++)
+		headInsert(i);
+	Print();
 
 	return 0;
 }
