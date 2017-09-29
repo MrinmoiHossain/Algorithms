@@ -44,7 +44,6 @@ void headInsert(int data)
 		head = temp;
 	}
 }
-
 //Inset value after every n		->O(n)
 void insertAfter(int n, int value)
 {
@@ -66,10 +65,34 @@ void insertAfter(int n, int value)
 		}
 	}
 }
-//Insert data before every n
-void insetBefore(int data, int n)
+//Insert value before every n	->O(n)
+void insertBefore(int n, int value)
 {
+	struct Node *current, *temp;
+	if(head != NULL){
+		if(head->data == n){
+			temp = (struct Node *)malloc(sizeof(struct Node));
+			temp->data = value;
+			temp->next = head;
+			head = temp;
 
+			current = head->next;
+		}
+		else{
+			current = head;
+		}
+
+		while(current->next != NULL){
+			if(current->next->data == n){
+				temp = (struct Node *)malloc(sizeof(struct Node));
+				temp->data = value;
+				temp->next = current->next;
+				current->next = temp;
+				current = current->next;
+			}
+			current = current->next;
+		}
+	}
 }
 
 //Length function -> O(1)
@@ -148,13 +171,25 @@ int main(void)
 	cout << "Length: " << len() << endl;
 	cout << endl;
 
+	cout << "Insert After" << endl;
 	for(int i = 1, n, v; i <= 3; i++){			//insert value after every n
-		cout << "Position value: ";
+		cout << "After position: ";
 		cin >> n;
 		cout << "Value: ";
 		cin >> v;
 
 		insertAfter(n, v);
+		Print();
+	}
+
+	cout << "Insert Before" << endl;
+	for(int i = 1, n, v; i <= 2; i++){			//insert value after every n
+		cout << "Before position: ";
+		cin >> n;
+		cout << "Value: ";
+		cin >> v;
+
+		insertBefore(n, v);
 		Print();
 	}
 
