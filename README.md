@@ -6,7 +6,7 @@
 - [Linked list](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Linked%20List)
 - [Stack](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Stack)
 - [Queue - Priority Queue](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Queue)
-Heap
+- Heap
 Hash table
 Map, HashMap
 Disjoint Set, Union Find
@@ -19,15 +19,15 @@ Binary Indexed Tree(BIT)
 Heavy light Decomposition
 
 ## Sorting
--[Bubble Sort]()
--[Selection Sort]()
--[Insertion Sort]()
--[Quick Sort]()
-Merge Sort
--[Counting Sort]()
-Radix Sort
-Bucket Sort
-Heap Sort
+- [Bubble Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/BubbleSort.cpp)
+- [Selection Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/SelectionSort.cpp)
+- [Insertion Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/InsertionSort.cpp)
+- [Quick Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/QuickSort.cpp)
+- Merge Sort
+- [Counting Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/Counting%20Sort.cpp)
+- Radix Sort
+- Bucket Sort
+- Heap Sort
 
 ## Searching
 -Linear Search
