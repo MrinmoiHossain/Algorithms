@@ -3,9 +3,9 @@
 </p>
 
 ## Data Structure
--[Linked list]()
--[Stack]()
--[Queue - Priority Queue]()
+- [Linked list](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Linked%20List)
+- [Stack](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Stack)
+- [Queue - Priority Queue](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Queue)
 Heap
 Hash table
 Map, HashMap
