@@ -73,14 +73,14 @@ Heavy light Decomposition
     Chinese Postman problem
 
 ## Mathematics and Number Theory:
--[GCD]()
--[LCM]()
-Euler Totient
--[Prime finding (Seive of Eratosthen)]()
--[Bitwise Seive]()
--[Checking Prime]()
--Prime factorization
--Factorial
+- [GCD](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/GCD.cpp)
+- [LCM]()
+- Euler Totient
+- [Prime finding (Seive of Eratosthen)](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/SieveOfEratosthenes.cpp)
+- [Bitwise Seive](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/BitwiseSeive.cpp)
+- [Checking Prime](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/PrimeCheck.cpp)
+- Prime factorization
+- Factorial
 -Fibonacci
     Counting, Permutation, combination
     Exponentiation
