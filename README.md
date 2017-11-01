@@ -80,8 +80,8 @@ Heavy light Decomposition
 - [Bitwise Seive](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/BitwiseSeive.cpp)
 - [Checking Prime](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/PrimeCheck.cpp)
 - Prime factorization
-- Factorial
--Fibonacci
+- [Factorial](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/Factorial.cpp)
+- [Fibonacci]()
     Counting, Permutation, combination
     Exponentiation
     Modular Arithmetic
