@@ -82,23 +82,24 @@ Heavy light Decomposition
 - Prime factorization
 - [Factorial](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/Factorial.cpp)
 - [Fibonacci]()
-    Counting, Permutation, combination
-    Exponentiation
-    Modular Arithmetic
-    Euclid, Extended euclid
-    Josephus Problem
-    Farey Sequence
-    Euler's phi
-    Catalan numbers
-    Burnside's lemma/circular permutation
-    Modular inverse
-    Probability
-    Chinese Remainder Theorem
-    Gaussian Elmination method
-    Dilworth's Theorem
-    Matrix Exponentiation
-    Determinant of a matrix
-    RSA public key crypto System
+- [Base Conversion](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/BaseConversion.cpp)
+- [Modular Exponentiation](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/ModularExponentiation.cpp)
+- Modular Arithmetic
+- Counting, Permutation, combination
+- Euclid, Extended euclid
+- Josephus Problem
+- Farey Sequence
+- Euler's phi
+- Catalan numbers
+- Burnside's lemma/circular permutation
+- Modular inverse
+- Probability
+- Chinese Remainder Theorem
+- Gaussian Elmination method
+- Dilworth's Theorem
+- Matrix Exponentiation
+- Determinant of a matrix
+- RSA public key crypto System
 
 ## Computational Geometry:
     Pick's Theorem
@@ -125,6 +126,6 @@ Heavy light Decomposition
     Boyer-Moore algo
 
 ## Others
--Recursion
--[C++ Standard Template Library(STL)]()
+- Recursion
+- [C++ Standard Template Library(STL)](https://github.com/MrinmoiHossain/Algorithms/tree/master/C%2B%2B%20STL(Standard%20Template%20Library))
 -[]()
