@@ -7,16 +7,16 @@
 - [Stack](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Stack)
 - [Queue - Priority Queue](https://github.com/MrinmoiHossain/Algorithms/tree/master/Data%20Structure/Queue)
 - Heap
-Hash table
-Map, HashMap
-Disjoint Set, Union Find
-Tree, Binary Tree
-Binary Search Tree
-Trie
-Suffix Array
-Segmented Tree, Range minimum Query
-Binary Indexed Tree(BIT)
-Heavy light Decomposition
+- Hash table
+- Map, HashMap
+- Disjoint Set, Union Find
+- Tree, Binary Tree
+- Binary Search Tree
+- Trie
+- Suffix Array
+- Segmented Tree, Range minimum Query
+- Binary Indexed Tree(BIT)
+- Heavy light Decomposition
 
 ## Sorting
 - [Bubble Sort](https://github.com/MrinmoiHossain/Algorithms/blob/master/Sorting/BubbleSort.cpp)
@@ -74,14 +74,14 @@ Heavy light Decomposition
 
 ## Mathematics and Number Theory:
 - [GCD](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/GCD.cpp)
-- [LCM]()
+- LCM
 - Euler Totient
 - [Prime finding (Seive of Eratosthen)](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/SieveOfEratosthenes.cpp)
 - [Bitwise Seive](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/BitwiseSeive.cpp)
 - [Checking Prime](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/PrimeCheck.cpp)
 - Prime factorization
 - [Factorial](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/Factorial.cpp)
-- [Fibonacci]()
+- Fibonacci
 - [Base Conversion](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/BaseConversion.cpp)
 - [Modular Exponentiation](https://github.com/MrinmoiHossain/Algorithms/blob/master/Number%20Theory/ModularExponentiation.cpp)
 - Modular Arithmetic
@@ -128,4 +128,4 @@ Heavy light Decomposition
 ## Others
 - Recursion
 - [C++ Standard Template Library(STL)](https://github.com/MrinmoiHossain/Algorithms/tree/master/C%2B%2B%20STL(Standard%20Template%20Library))
--[]()
+
